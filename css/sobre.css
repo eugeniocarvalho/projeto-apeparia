@@ -31,10 +31,31 @@
 }
 
 .sobre__imagem {
-  width: 100vw;
-  max-width: 600px;
+  display: none;
+}
 
-  box-shadow: 0 2px 10px 5px #00000020;
+@media screen and (min-width: 1024px) {
+  .sobre {
+    display: flex;
+  }
 
-  margin-bottom: 0.5rem;
+  .sobre__conteudo {
+    margin-right: 3rem;
+  }
+
+  .sobre__titulo {
+    text-align: left;
+  }
+
+  .sobre__texto--divisao {
+    border-bottom: 1px solid var(--cinza-medio);
+    padding-bottom: 1.5rem;
+  }
+
+  .sobre__imagem {
+    display: initial;
+    max-width: 600px;
+    box-shadow: 0 2px 10px 5px #00000020;
+    margin-bottom: 0.5rem;
+  }
 }
